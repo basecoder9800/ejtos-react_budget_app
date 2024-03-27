@@ -7,6 +7,7 @@ const Budget = () => {
     const handleBudgetChange = (event) => {
         const updatedBudget = event.target.value;
         setNewBudget(updatedBudget);
+        dispactch({ type: UPDATE_})
         if (updatedBudget >= 20000) {
             alert("The budget cannot exceed 20,000.");
             return;
