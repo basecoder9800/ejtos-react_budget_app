@@ -24,6 +24,33 @@
   color: white;
 }
 
+.custom-select {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgb(255, 145, 0);
+    color: #333;
+}
+
+.custom-select:hover {
+    border-color: #aaa;
+}
+
+.custom-select:focus {
+    outline: none;
+    border-color: rgb(255, 0, 0);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.custom-select option {
+    padding: 10px;
+    background-color: rgb(112, 0, 0);
+    color: rgb(11, 216, 21);
+}
+
+
 .App-link {
   color: #61dafb;
 }
