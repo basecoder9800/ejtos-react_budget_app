@@ -24,6 +24,33 @@
   color: white;
 }
 
+.custom-select {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+}
+
+.custom-select:hover {
+    border-color: #aaa;
+}
+
+.custom-select:focus {
+    outline: none;
+    border-color: #aaa;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.custom-select option {
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+}
+
+
 .App-link {
   color: #61dafb;
 }
