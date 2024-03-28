@@ -19,6 +19,7 @@ const AllocationForm = (props) => {
                 alert("The value inputted is not a number! Please input only numbers.")
                 return;
             }
+            //if(cost > )
 
         const expense = {
             name: name,
@@ -61,6 +62,17 @@ const AllocationForm = (props) => {
                   <select className="custom-select" id="inputGroupSelect02" onChange={(event) => setAction(event.target.value)}>
                         <option defaultValue value="Add" name="Add">Add</option>
                 <option value="Reduce" name="Reduce">Reduce</option>
+                  </select>
+
+                  <div className="input-group-prepend" style={{ marginLeft: '2rem' }}>
+                <label className="input-group-text" htmlFor="inputGroupSelect02">Currency</label>
+                  </div>
+                  <select className="custom-select" id="inputGroupSelect02" onChange={(event) => setAction(event.target.value)}>
+                        <option defaultValue value="Dollar" name="Dollar">$ Dollar</option>
+                        <option value="Pound" name="Pound">£ Pound</option>
+                        <option value = "Euro" name="Euro">€ Euro</option>
+                        <option value="Rupee" name="Rupee">₹ Rupee</option>
+
                   </select>
 
                     <input
